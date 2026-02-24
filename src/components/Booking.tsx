@@ -53,7 +53,7 @@ export default function Booking() {
   };
 
   return (
-    <section id="booking" className="relative py-24 sm:py-32 px-4">
+    <section id="booking" className="relative py-24 sm:py-32 px-4" suppressHydrationWarning>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -113,6 +113,7 @@ export default function Booking() {
                   placeholder="Enter your name"
                   className="w-full px-4 py-3 rounded-xl bg-navy border border-gold/20 text-foreground placeholder:text-muted/50 focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition-all"
                   required
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -127,6 +128,7 @@ export default function Booking() {
                   onChange={(e) => setLuckType(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl bg-navy border border-gold/20 text-foreground focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition-all appearance-none cursor-pointer"
                   required
+                  suppressHydrationWarning
                 >
                   <option value="" disabled>
                     Select your luck category
@@ -155,6 +157,7 @@ export default function Booking() {
               <button
                 type="submit"
                 className="w-full py-4 bg-gold text-navy font-bold text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,215,0,0.3)] hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                suppressHydrationWarning
               >
                 🍀 Submit & Pray
               </button>

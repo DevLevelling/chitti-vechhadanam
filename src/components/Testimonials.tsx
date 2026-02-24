@@ -28,20 +28,20 @@ const testimonials = [
     avatar: "H",
   },
   {
-    name: "Anonymous",
-    title: "IIT Topper (Allegedly)",
+    name: "Kiran",
+    title: "Final Year Student KARE",
     rating: 5,
-    text: "I just walked past the bed and got a promotion. Didn't even have to sit. The proximity effect is REAL.",
-    verified: false,
-    avatar: "?",
+    text: "I'm just a average student with having some what good technical knowledge , when I sat on the chitti's bed I got placed it's all bout luck was 25% and while sitting in the bed it was 100% thanks to Chitti Vechhadanam ",
+    verified: true,
+    avatar: "☺️",
   },
   {
-    name: "Rahul M.",
-    title: "Startup CEO (ex-Unemployed)",
+    name: "Santhosh Sai Ram",
+    title: "B.Tech",
     rating: 5,
     text: "Before the bed: rejected from 47 companies. After the bed: founded my own. Now I reject people. Circle of life.",
     verified: true,
-    avatar: "R",
+    avatar: "S",
   },
   {
     name: "Priya K.",
@@ -67,6 +67,15 @@ const testimonials = [
     verified: true,
     avatar: "D",
   },
+  {
+    name: "M.Rajesh",
+    title: "Final Year Student KARE",
+    rating: 5,
+    text: "I am none for now, I will somthing more in future that's the confidence gave me that bed thanks to Chitti vecchadanam",
+    verified: true,
+    avatar: "🌸",
+  },
+  
 ];
 
 function StarRating({ rating }: { rating: number }) {
